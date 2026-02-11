@@ -22,7 +22,7 @@ def ask_question(question):
         scores.append((score, ch))
     
     scores.sort(key=lambda x: x[0], reverse=True)
-    top_chunks = scores[:3]
+    top_chunks = scores[:5]
     
     context = "\n\n".join([f"[Σελίδα {c[1]['page']}]: {c[1]['text']}" for c in top_chunks])
     
