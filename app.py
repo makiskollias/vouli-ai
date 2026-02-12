@@ -6,9 +6,12 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 # Ρυθμίσεις σελίδας
-st.set_page_config(page_title="Vouli-AI Assistant", page_icon="⚖️")
-st.title("⚖️ Vouli-AI: Νομικός Βοηθός")
-st.markdown("Ρωτήστε με οτιδήποτε για τον **Νόμο 5083/2024** (Επιστολική Ψήφος).")
+st.title("⚖️ Vouli-AI: Ο Ψηφιακός σου Βοηθός Νομοθεσίας")
+
+st.markdown("""
+Αυτός ο βοηθός χρησιμοποιεί Τεχνητή Νοημοσύνη για να αναλύει το νομοθετικό έργο της Βουλής. 
+Μπορείτε να ρωτήσετε οτιδήποτε για τους νόμους που έχουν καταχωρηθεί στο σύστημα.
+""")
 
 load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
