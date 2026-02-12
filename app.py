@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 
 # Ρυθμίσεις σελίδας
-st.title("⚖️ Vouli-AI: Ο Ψηφιακός σου Βοηθός Νομοθεσίας")
+st.title("🏛️ Vouli-AI: Ο Ψηφιακός σου Βοηθός Νομοθεσίας")
 
 st.markdown("""
 Αυτός ο βοηθός χρησιμοποιεί Τεχνητή Νοημοσύνη για να αναλύει το νομοθετικό έργο της Βουλής. 
