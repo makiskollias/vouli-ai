@@ -25,7 +25,7 @@ def load_data():
 chunks = load_data()
 
 def get_answer(question):
-    q_emb = client.embeddings.create(input=[question], model="text-embedding-3-small").data[0].embedding
+    q_emb = client.embeddings.create(input=[question], model="text-embedding-ada-002").data[0].embedding
     scores = [(np.dot(q_emb, ch["embedding"]), ch) for ch in chunks]
     scores.sort(key=lambda x: x[0], reverse=True)
     
