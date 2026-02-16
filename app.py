@@ -12,7 +12,7 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 # 1. Ρύθμιση Σελίδας
 st.set_page_config(
     page_title="Vouli-AI: Νομικός Βοηθός",
-    page_icon="⚖️",
+    page_icon="🏛️",
     layout="centered"
 )
 
