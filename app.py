@@ -96,4 +96,4 @@ if prompt := st.chat_input("Πώς μπορώ να βοηθήσω;"):
     with st.chat_message("assistant"):
         answer = get_answer(prompt)
         st.markdown(answer)
-        st.session_state.messages.append({"role": "assistant", "content": answer})®
+        st.session_state.messages.append({"role": "assistant", "content": answer})
